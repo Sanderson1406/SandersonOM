@@ -1,0 +1,14 @@
+#titulo {
+    text-align: center;
+    color: green;
+}
+
+.rodape {
+    color: grey;
+    text-align: center;
+    border: 1px solid;
+}
+
+.entradas {
+    border: 1px solid;
+}
