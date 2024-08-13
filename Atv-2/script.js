@@ -9,6 +9,12 @@ function submeter() {
 }
 
 function validaCPF(cpf) {
+
+/* Continuar validação
+formatos CPFs validos:
+123.456.89-10
+12345678910
+*/
     if (cpf == "") {
         alert("Campo CPF não pode ser vazio")
         return false
@@ -24,6 +30,11 @@ function validaCPF(cpf) {
     if (!/^[\d.-]+$/.test(cpf)) {
         alert("Caracter invalido")
     } 
+
+    if(cpf.length != 1 && !cpf.length != 14) {
+        alert("Formato invalido")
+        return false
+    }
     
     return true
 }
